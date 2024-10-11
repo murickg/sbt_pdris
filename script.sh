@@ -23,6 +23,7 @@ monitor_disk() {
     done
 }
 
+#Статусы скрипта
 start_monitoring() {
     if [[ -f $PIDFILE ]]; then
         echo "Монитор уже запущен. PID: $(cat $PIDFILE)"
@@ -60,6 +61,7 @@ stop_monitoring() {
     fi
 }
 
+# Основная логика
 case "$1" in
     START)
         start_monitoring
