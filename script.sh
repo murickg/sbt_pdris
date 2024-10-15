@@ -2,15 +2,13 @@
 
 # Путь к PID файлу
 PIDFILE="/tmp/disk_monitor.pid"
+TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 
 # Функция для мониторинга дискового пространства и inodes
 monitor_disk() {
     while true; do
-        TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
         FILENAME="disk_usage_$TIMESTAMP.csv"
 
-        #df -h --output=source,size,used,avail,pcent,target > "$FILENAME"
-        #df -ih --output=source,itotal,iused,iavail,ipcent,target >> "$FILENAME"
         df -h | awk 'NR==1 || /^\/dev\//' > "$FILENAME"
         df -ih | awk 'NR==1 || /^\/dev\//' >> "$FILENAME"
 
@@ -18,7 +16,7 @@ monitor_disk() {
 
         NEW_DAY=$(date +"%Y-%m-%d")
         if [[ "$NEW_DAY" != "$CURRENT_DAY" ]]; then
-            CURRENT_DAY="$NEW_DAY"
+            TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
         fi
     done
 }
