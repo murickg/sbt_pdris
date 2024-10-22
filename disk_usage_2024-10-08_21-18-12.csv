@@ -1,0 +1,14 @@
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk1s1s1   233Gi    13Gi    39Gi    26%    394k  410M    0%   /
+/dev/disk1s3     233Gi   3.7Gi    39Gi     9%    2.2k  410M    0%   /System/Volumes/Preboot
+/dev/disk1s5     233Gi   4.0Gi    39Gi    10%       4  410M    0%   /System/Volumes/VM
+/dev/disk1s6     233Gi    64Mi    39Gi     1%     851  410M    0%   /System/Volumes/Update
+/dev/disk1s2     233Gi   172Gi    39Gi    82%    2.3M  410M    1%   /System/Volumes/Data
+/dev/disk1s1     233Gi    13Gi    39Gi    26%    404k  410M    0%   /System/Volumes/Update/mnt1
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk1s1s1   233Gi    13Gi    39Gi    26%    394k  410M    0%   /
+/dev/disk1s3     233Gi   3.7Gi    39Gi     9%    2.2k  410M    0%   /System/Volumes/Preboot
+/dev/disk1s5     233Gi   4.0Gi    39Gi    10%       4  410M    0%   /System/Volumes/VM
+/dev/disk1s6     233Gi    64Mi    39Gi     1%     851  410M    0%   /System/Volumes/Update
+/dev/disk1s2     233Gi   172Gi    39Gi    82%    2.3M  410M    1%   /System/Volumes/Data
+/dev/disk1s1     233Gi    13Gi    39Gi    26%    404k  410M    0%   /System/Volumes/Update/mnt1
