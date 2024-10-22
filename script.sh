@@ -16,6 +16,7 @@ monitor_disk() {
 
         NEW_DAY=$(date +"%Y-%m-%d")
         if [[ "$NEW_DAY" != "$CURRENT_DAY" ]]; then
+            CURRENT_DAY="$NEW_DAY"
             TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
         fi
     done
